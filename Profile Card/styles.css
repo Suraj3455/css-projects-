@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f2f2;
+}
+.Profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    /* background: #ffffff; */
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 30px ;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 255);
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .Profile-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+.Profile-card .text-data{
+    /* text-align: center; */
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+.text-data .profession{
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+}
+.Profile-card .media-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.media-icons a{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #333;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.facebook{
+    background-color: #0453ff;
+    color: #ffffff;
+    border: none;
+}
+.twitter{
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+}
+.instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #ffffff;
+    border: none;
+}
+.linkedin{
+    background-color: #0e76a8;
+    color: #ffffff;
+    border: none;
+}
+.Profile-card .buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.buttons .btn{
+    height: 40px;
+    width: 100px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+.buttons .btn:hover{
+    background-color: #ff4f4f;
+}

@@ -22,7 +22,7 @@ body{
     /* background: #ffffff; */
     background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
 
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.9);
     border-radius: 20px;
     padding: 30px ;
 }
@@ -117,6 +117,7 @@ body{
     color: #fff;
     background-color: #333;
     transition: all 0.3s ease;
+    
 }
 .buttons .btn:hover{
     background-color: #ff4f4f;

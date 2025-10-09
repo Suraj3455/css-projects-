@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html , body{
+    display: grid;
+    height: 100vh;
+    background: #3bf8d2;
+    place-items: center;
+}
+
+.wrapper{
+    width: 350px;
+    background: #55e5f8;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    height: 100px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    border: 2px solid #2f8775;
+}
+
+.wrapper .option{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #2f8775;
+    /* padding: 15px 20px; */
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 ,
+#option-2:checked ~ .option-2{
+    background: #2f8775;
+    color: #fff;
+}
+.wrapper .option .dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    border: 2px solid #2f8775;
+    position: relative;
+}
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot{
+    border-color: #2f8775;
+    background: #2f8775;
+}
+.wrapper .option .dot::before{
+    border-color: #2f8775;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    content: "";
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: scale(1); ;
+}
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    background: #2f8775;
+}
+.wrapper .option span{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#option-1:checked ~ .option-1 span,
+#option-2:checked ~ .option-2 span{
+    opacity: 1;
+    background: #2f8775;
+}
+input[type="radio"]{
+    display: none;
+}
